@@ -9,9 +9,33 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
 </head>
 <body>
-    <header>
-        <h1>Explore Your Meal</h1>
+    <header class="py-5">
+        <section class="container">
+            <h1 class="text-center">Explore Your Meal</h1>
+        </section>
     </header>
+
+    <main>
+
+        <section  class="container single-meal d-flex justify-content-center mb-3">
+            <div class="detail-container col-md-3 g-4" id="detail-container">
+
+            </div>
+        </section>
+
+        <section class="container">
+            <div class="form-container mb-3 text-center">
+                    <input id="search-field" class="p-2 w-25" type="text" placeholder="Search your favorite food">
+                    <button onclick="searchFood()" class="btn btn-success py-2">Search Food</button>
+            </div>
+        </section>
+
+        <section class="container">
+            <h1>My meals</h1>
+            <div class="meal-container row row-cols-1 row-cols-md-3 g-4" id="meal-container">
+            </div>
+        </section>
+    </main>
     
 
     <script src="meal.js"></script>
